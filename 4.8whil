@@ -1,0 +1,30 @@
+switch   
+case 后面接着要判断的值
+
+  default   没有匹配的值就会跳转default里面的语句
+  break 跳转switch语句的后面
+  如何没有break 就会一下向下走
+多分支的一种， 只适合于多值判断
+
+parseInt
+
+
+document.write(1+"<br />");
+
+
+
+		var i=1;
+		while(i<101){
+			document.write(i+"<br>");
+
+			i++;  //i=i+1
+		}
+
+
+while循环
+var i=1;
+		while(i<101){
+			document.write(i+"<br>");
+
+			i++;  //i=i+1
+		}
