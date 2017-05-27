@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+      <div id="show">存放文本文件内容</div>
+      <div>asdfsafd</div>
+	  <script>
+	  		var show=document.getElementById("show");
+	  		if(window.ActiveXObject){
+	  			http=new ActiveXObject("Microsoft.XMLHTTP");
+	  		}
+	  		else{
+	  			http=new XMLHttpRequest;
+	  		}
+	  		
+
+	  		http.open("GET","a.txt",true);  //true 异步  false 同步
+	  		http.send();
+	  		http.onreadystatechange=function(){
+	  			if(http.readyState==4 && http.status==200)  //200 ok 404 页面没找到
+	  			 {
+	  			 	 //0 未初始化 1 open  2 sending 3 已接收 4解析完成
+	  				show.innerHTML=http.responseText;  //局部刷新技术
+	  		    }
+	  		}
+	  		
+	  		
+	  </script>
+</body>
+</html>
