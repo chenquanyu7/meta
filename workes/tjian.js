@@ -1,4 +1,9 @@
 window.onload=function(){
+	var box=document.getElementById("box");
+	box.addEventListener("touchstart",function(ev){
+		ev.preventDefault();
+	})
+	
 	$(function(){
 		var j=0;
 	    var n=0;
