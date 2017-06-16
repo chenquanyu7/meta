@@ -1,8 +1,8 @@
 window.onload=function(){
-	var set=document.getElementById("set");
-	set.addEventListener("touchstart",function(ev){
-		ev.preventDefault();
-	})
+//	var set=document.getElementById("set");
+//	set.addEventListener("touchstart",function(ev){
+//		ev.preventDefault();
+//	})
 	
 	$(function(){
 		var j=0;
