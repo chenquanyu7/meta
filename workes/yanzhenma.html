@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>验证码</title>
+	</head>
+	<body>
+		
+		<canvas id="can" width="107" height="45"></canvas>	
+		  
+		   
+		
+		
+	</body>
+	<script type="text/javascript">
+		var can=document.getElementById("can");
+		var oc=can.getContext("2d");
+		var arr3=["0","1","2","3","4","5","6","7","8","9"];
+	var arr=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","z","y"];
+	var arr2=[];
+	var s="";
+	for(var i=0;i<arr.length;i++){
+		arr2.push(arr[i].toUpperCase());
+	}//62个字符
+    arr=arr.concat(arr2).concat(arr3);
+    console.log(arr);
+    var len=arr.length;
+    
+    	var t=parseInt(Math.random()*len);
+    	var y=parseInt(Math.random()*len);
+    	s=arr[t];//随机的符号
+    	v=arr[y];
+      oc.font="oblique 24px Arial";
+     
+     oc.fillText(s,7,30);
+     oc.rotate(20*Math.PI/180);
+//    can.style.transform="rotate(30deg) skew(30deg )";
+     
+   oc.beginPath();
+   oc.rotate(0*Math.PI/180);
+   oc.font="oblique 24px Arial";
+    
+  oc.fillText(v,27,30);
+//    can.style.transform="rotate(90deg) skew(30deg )";
+   oc.beginPath();
+    oc.rotate(-20*Math.PI/180);
+   oc.font="oblique 24px Arial";
+   oc.fillText(v,37,30);
+  
+	</script>
+</html>
