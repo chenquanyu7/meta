@@ -12,6 +12,13 @@ $(function(){
 			$(this).css("background","rgb(76, 175, 80)");
 		}
 	})
+	$(".go"),addEventListener("touchstart",function(ev){
+		ev.preventDefault();
+	})
+	$(".back").on("tap",function(){
+		console.log("aaa");
+	location.href="shangcheng.html";
+	})
 })
 	
 }

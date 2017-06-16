@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1497082767456'); /* IE9*/
-  src: url('iconfont.eot?t=1497082767456#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1497082767456') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1497082767456') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1497082767456#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1497598252068'); /* IE9*/
+  src: url('iconfont.eot?t=1497598252068#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1497598252068') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1497598252068') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1497598252068#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -14,6 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-set:before { content: "\e61f"; }
 
 .icon-fanhui:before { content: "\f0343"; }
 
