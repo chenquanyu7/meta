@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="myfont/font_3l2h3uy7wopqfr/iconfont.css"/>
+		<!--<link rel="stylesheet" type="text/css" href="font_weixinqq/iconfont.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+		<script src="../angular.min.js"></script>
+		<script>
+			document.documentElement.style.fontSize=innerWidth/16+"px";
+		</script>
+		
+	     
+		<title>登录</title>
+		<style type="text/css">
+			
+			#all .suc{
+				position:fixed;
+				width:100%;
+				height: 5rem;
+				left: 0;
+				top: 8rem;
+				background:rgba(0,0,0,0.4);
+				color:green;
+				text-align: center;
+				line-height: 5rem;
+				font-size: 1.4rem;
+				z-index: 10;		
+					}
+			#all .fail{
+				position:fixed;
+				width:100%;
+				height: 5rem;
+				left: 0;
+				top: 8rem;
+				background:rgba(0,0,0,0.4);
+				color: chocolate;
+				text-align: center;
+				line-height: 5rem;
+				font-size: 1.4rem;
+				z-index: 10;
+			}
+		</style>
+		<script type="text/javascript">
+	     	var app=angular.module("app",[]);
+	     	app.controller("testhttp",function($scope,$http,$timeout){
+	     		var data=$http.get("users.json");
+//	     		var data = $http.get("users.json");
+                
+	     		data.then(function(list){
+	     			console.log(list.data);
+	     			$scope.list=list.data.users;
+	     			console.log($scope.list);
+	     		},function(){
+	     			alert("fail");//如果找不到json文件就弹窗
+	     		})
+	     		$scope.user={"name":"","pass":""};
+	     		$scope.login=function(){
+	     			var arr=$scope.list;
+	     			console.log(arr);
+	     			console.log($scope.user.name);
+	     			for(var i=0;i<arr.length;i++){
+	     				console.log(arr[i].name,arr[i].pass);
+	     				if(arr[i].name==$scope.user.name && arr[i].pass==$scope.user.pass){
+	     					$scope.info="登陆成功";
+	     					$scope.mz="suc";
+	     				$timeout(function(){
+	     			location.href="https://chenquanyu7.github.io/meta/workes/shangcheng.html";
+	     				},3000);
+	     					break;
+	     				 }
+	     		
+	     				else{
+	     					$scope.info="登陆失败，请重试!";
+	     					$scope.mz="fail";
+	     				}
+	     				$timeout(function(){
+	     			$scope.info="";
+	     				},3000);
+	     			}
+	     		}
+	     		$scope.$watch("user",function(n,o){
+	     			$scope.info="";
+	     		})
+	     	})
+	     </script>
+	</head>
+	<body >
+		<!--<div class="container">
+			 <ul class="swiper-wrapper banner">
+			 		<li class="swiper-slide"><img src="img/10.large.jpg" alt="" /></li>
+			 </ul>
+		<!--	 <div class="swiper-pagination">w</div>-->
+		<!--</div>-->
+		<div id="all">
+	<!--<头部>-->	
+	<header>
+		<a href="#" class="logo">
+			<span class="logo_img"></span>
+			<span class="logo_font"></span>
+		</a>
+	<!--<头部>-->	
+	</header>
+    <!--登录的from表单-->
+	<section ng-app="app">
+		<!--没有写名字-->
+		<from ng-controller="testhttp">
+			<div class="user dl" >
+				<span class="zi">登录：</span>
+				<input type="text" name="" id="userId" value="" placeholder="请输入用户名"  ng-model="user.name"/>
+			</div>
+		    <div class="password dl">
+		    	<span class="zi">密码：</span>
+		    	<input type="password" name="" id="passWord" value="" placeholder="请输入密码" ng-model="user.pass"/>
+		    	
+		    </div>
+		    <div ng-show="info.length>0" class="{{mz}}">{{info}}</div>
+		    <input type="submit" id="enter" name="" value="登     录" ng-click="login()"/>
+		    <div class="sign">
+		    	<ul>
+		    		<li><a href="">忘记密码</a></li>
+		    		<li><a href="">申请注册</a></li>
+		    	</ul>
+		    </div>
+		    <div class="yzm"></div>
+		</from>
+		
+	</div>
+	</section>
+	<!--登录的from表单-->
+	<footer>
+		<div class="foot">
+			<span class="other">第三方登录</span>
+			<ul>
+				<li>
+					<a href="#"><i class="iconfont icon-qq"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="iconfont icon-weibo"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="iconfont icon-weixin5"></i></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	
+	
+		
+	</body>
+</html>
