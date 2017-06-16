@@ -74,7 +74,9 @@ body{
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
-	line-height: 2.5rem;
+	        display: flex;
+	justify-content: center;
+	align-items:center;
 }
 .mulu{
 	background:url(../img/fdj.png)no-repeat left center;
@@ -90,6 +92,7 @@ section{
 	width: 100%;
 	height: 100%;
 	flex: 1;
+	overflow: auto;
 }
 .conter_box{
 	width: 100%;
@@ -223,9 +226,7 @@ footer{
 	width: 100%;
 	height: 2.25rem;
 	background: #FFFFFF;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	
 }
 /*右边盒子*/
 .right_move{

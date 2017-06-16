@@ -1,6 +1,6 @@
 window.onload=function(){
-	var box=document.getElementById("box");
-	box.addEventListener("touchstart",function(ev){
+	var set=document.getElementById("set");
+	set.addEventListener("touchstart",function(ev){
 		ev.preventDefault();
 	})
 	
