@@ -19,7 +19,7 @@ window.onload=function(){
 					var arr=data.list;
 					console.log(arr);
 					var str="";
-		for(i=0;i<3;i++){
+		for(i=0;i<4;i++){
 	str+="<li><a><div class='imgleft'><img src='"+arr[j].imges+"'></div>";
 	str+="<div class='imgright'><p>"+arr[j].title+"</p><p>"+arr[j].make+"</p>";
 	str+="<p><span>"+arr[j].sale+"</span></p><p><span>优选价￥</span><em>"+arr[j].price+"</em></p>";
