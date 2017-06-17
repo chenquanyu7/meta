@@ -5,40 +5,71 @@ a { -webkit-text-decoration: none; text-decoration: none; -webkit-tap-highlight-
 i { font-size: 0.6rem; color: #006c54; font-weight: bold; }
 
 ul { list-style: none; }
+input{
+	outline: 0;
+}
+input{
+	color:#FFFFFF;
+}
 
 html, body { width: 100%; height: 100%; overflow: hidden; }
 
 #all { z-index: 200; background: rgba(255, 255, 255, 0.3); }
 
-header { position: fixed; z-index: 100; top: 0; width: 100%; padding: 4rem 0 0 1rem; }
-header .logo { width: 4rem; display: -webkit-flex; }
-header .logo .logo_img { -webkit-flex: 1; }
-header .logo .logo_img img { display: inline-block; width: 2rem; height: 2rem; }
-header .logo .logo_font { -webkit-flex: 1; color: #888; font-size: 1.75rem; }
+header { position: fixed; z-index: 100; top: 0; width: 100%;
+       padding: 4rem 0 0 1rem; background: rgba(255,255,255,0.7);}
+header .logo { width: 4rem;
+                position: absolute;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                left: 50%;
+                height: 50%;
+                margin-left: -2rem;
+                margin-top: -2rem;
+                
+                }
+header .logo>img{
+	             width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                 box-shadow: 0px 0px 0px 2px #ffffff;
+}
+
+
 
 section { padding-top: 8rem; width: 100%; -webkit-box-sizing: border-box; z-index: 200; position: fixed; }
 section from { z-index: 888; }
 section from .dl { z-index: 888; width: 14rem; height: 2rem; margin: 0.5rem auto; border-bottom: 0.05rem solid #888; line-height: 2rem; padding-left: 0.25rem; -webkit-box-sizing: border-box; }
-section from .dl .zi { font-size: 0.8rem; font-weight: bold; color: #a3cf62; }
+section from .dl .zi { font-size: 0.8rem; font-weight: bold; color: #FFFFFF; }
 section from .dl input { outline: 0; width: 60%; height: 1rem; background: transparent; }
 section from .dl.user #userId { border: none; }
 section from .dl.password #passWord { border: none; }
-section from #enter { display: block; width: 12rem; height: 2rem; background: #444693; margin: 0.2rem auto; color: #feeeED; border: 0; }
+section from #enter { display: block; width: 12rem; height: 2rem; background:#FF9913; margin: 0.2rem auto; color: #feeeED; border: 0; }
 section from .sign { width: 14rem; height: auto; margin: 0.2rem auto; }
 section from .sign ul { width: 100%; height: auto; display: -webkit-flex; }
 section from .sign ul li { -webkit-flex: 1; text-align: center; }
-section from .sign ul li a { font-size: 0.8rem; color: #795DA3; }
+section from .sign ul li a { font-size: 0.8rem; color:#FF9913; }
 
 footer { position: fixed; z-index: 100; bottom: 0; width: 100%; height: 3rem; line-break: 3rem; text-align: center; }
 footer .foot { width: 14rem; margin: 0 auto; padding-top: 0.5rem; border-top: 0.05rem solid #888; }
 footer .foot ul { width: 100%; height: 100%; display: -webkit-flex; }
 footer .foot ul li { -webkit-flex: 1; }
-footer .foot ul li a i { font-size: 1.8rem; }
+footer .foot ul li a i { font-size: 1.8rem;color:#FF9913; }
 footer .foot .other { position: absolute; top: -0.5rem; left: 50%; margin-left: -2rem; display: inline-block; width: 4rem; height: 1rem; color: #fff; line-height: 1rem; font-size: 0.6rem; text-align: center; background: rgba(255, 255, 255, 0.3); z-index: 1000; border-radius: 8px; }
 
 .container { width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 0; }
 .container .banner { width: 100%; height: 100%; display: -webkit-flex; transition: transform 1s; }
-.container .banner li { width: 100%; height: 100%; -webkit-flex-shrink: 0; }
-.container .banner li img { width: 100%; height: 100%; }
+.container .banner li { width: 100%; height: 100%; -webkit-flex-shrink: 0;position: absolute;left: 0;
+                           top: 0;}
+.container .banner li img { width: 100%; height: 100%; opacity: 0.9;}
 
 /*# sourceMappingURL=foot.css.map */
+.swiper-slide{
+	/*filter: blur(2px);*/
+	z-index: -999;
+}
+.bg{
+	background: rgba(0,0,0,0.2);
+	z-index: 999;
+}

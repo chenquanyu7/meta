@@ -541,8 +541,8 @@ footer{
  footer { border-top: 0.05rem solid #eee; position: fixed; bottom: 0; left: 0; width: 100%; height: auto; background: white; z-index: 999; }
  footer ul { height: 100%; display: -webkit-flex; }
  footer ul li { -webkit-flex: 1; height: 100%; padding: 0.25rem 0; }
-footer ul li:nth-child(4) { background: rgba(0, 0, 0, 0.8); color: rgba(255, 255, 255, 0.7); }
+footer ul li:nth-child(4) { background: rgba(0, 0, 0, 0.7); color: #aaaaaa; }
  footer ul li a { text-align: center; }
- footer ul li a .zi { font-size: 0.8rem; }
+ footer ul li a .zi { font-size: 0.8rem; color:#AAAAAA}
 footer ul li a span { display: inline-block; width: 100%; margin-top: 0.05rem; font-size: 0.8rem; }
- footer ul li a span i.iconfont{ font-size:1.2rem; }
+ footer ul li a span i.iconfont{ font-size:1.2rem;color: #aaaaaa; }

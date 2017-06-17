@@ -90,3 +90,15 @@ window.onload=function(){
 //		    			<p><span>原价</span>￥<span>199</span></p>
 //		    		</div></a>
 //		    	</li>	 
+//function searchResult(key){
+//  	$.ajax({
+//			type:"get",
+//			url:"http://api.search.sina.com.cn/?c=news&q="+key+"&stime=2016-06-05&etime=2017-06-07&sort=rel&highlight=1&num=10&ie=utf-8&callback",
+//			dataType:"jsonp",
+//			jsonpCallback:"callback",
+//			success:function (data){
+//				console.log(data);
+//				
+//			}
+//		});  //新浪搜索稳定API
+//  }
