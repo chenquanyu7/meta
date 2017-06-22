@@ -1,0 +1,231 @@
+
+body{
+	background: #5C5C5C;
+}
+/*登录页*/
+#box {
+  width: 100%;
+  height: 100%;
+
+  background: #FFFFFF;
+}
+header{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	
+}
+.back{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top:0;
+
+	
+}
+.back::after{
+	position: absolute;
+	content: "";
+	width: 12px;
+	height: 12px;
+	border:2px solid #099fde;
+	    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    left: 10px;
+    top: 50%;
+    margin-top: -6px;
+	 transform: rotate(45deg);
+}
+#nav{
+	text-align: center;
+	padding: 27px 0 24px 0;
+}
+#nav a{
+	text-decoration: none;
+	font-size:18px;
+	    color: #666;
+	    vertical-align: top;
+	    line-height:35px;
+}
+#nav .athree{
+	color: #f56600;
+}
+
+.lines{
+	display: inline-block;
+	width: 1px;
+	height:32px;
+	    background:#e0e0e0;
+	    margin: 0px 35px 0 42px;
+	   
+	  
+}
+#formbox{
+	width:100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	text-align: center;
+	
+}
+form{
+	width: 100%;
+}
+#txt,#pass{
+	width: 100%;
+	padding: 16px 16px 13px 14px;
+	font-size: 16px
+}
+#pass{
+	margin-top: 10px;
+}
+#shuju{
+	width:338px ;
+	margin-top: 10px;
+	height: 48px;
+	
+}
+#yzma{
+	width:175px;
+	float: left;
+	padding: 16px 16px 13px 14px;
+	font-size: 16px;
+}
+#sjishu{
+	float: left;
+	line-height: 45px;
+	border: 1px solid #CCCCCC;
+
+}
+#smt{
+	width:90%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+   margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+        background-color: #ff9a14;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.position{
+	width: 100%;
+	display: flex;
+	justify-content:space-between ;
+	padding: 5px 15px;
+	margin-top: 15px;
+}
+.position>a{
+	    color: #666;
+    font-size: 14px;
+}
+.logo{
+	width:100%;
+	padding:20px 15px;
+	margin-top:60px;
+	display:flex ;
+}
+.logo>a{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+.logo>a>i{
+	display: block;
+	width:40px;
+	height: 40px;
+	position: relative;
+	border-radius: 50%;
+	border:1px solid #000000;
+}
+.logo .lo_one{
+	    border-color: rgba(72,185,241,0.6);
+	
+	}
+	.logo .lo_one::after{
+		position: absolute;
+		content: "";
+		width:23px;
+		height: 20px;
+		background:url(../img/bglg.png)no-repeat -1px -21px;
+		background-size:24px auto;
+		left: 50%;
+		top: 50%;
+		margin-left: -12px;
+		margin-top:-10px;
+	}
+.logo .lo_two{
+	    border-color: rgba(87,196,94,0.6);
+}
+.logo .lo_two::after{
+		position: absolute;
+		content: "";
+		width:23px;
+		height: 20px;
+		background:url(../img/bglg.png)no-repeat -1px -1px;
+		background-size:24px auto;
+		left: 50%;
+		top: 50%;
+		margin-left: -12px;
+		margin-top:-10px;
+	}
+.logo .lo_three{
+	border-color: rgba(247,105,104,0.6);
+}
+.logo .lo_three::after{
+		position: absolute;
+		content: "";
+		width:23px;
+		height: 20px;
+		background:url(../img/bglg.png)no-repeat -1px -63px;
+		background-size:24px auto;
+		left: 50%;
+		top: 50%;
+		margin-left: -12px;
+		margin-top:-10px;
+	}
+	/*注册页*/
+	#twobox{
+		width: 100%;
+		height: 100%;
+		background: #FFFFFF;
+	}
+#twobox>header{
+	width: 100%;
+	height: 40px;
+	position: relative;
+	
+}
+/*#nav .atwo{
+	color: #f56600;
+}
+#nav .aone{
+	color: #666;
+}*/
+#txts,#passes{
+	width: 100%;
+	padding: 16px 16px 13px 14px;
+	font-size: 16px
+}
+#passes{
+	margin-top: 10px;
+}
+#smts{
+	width:90%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+   margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+        background-color: #ff9a14;
+    border: none;
+    margin-top: 10px;
+    border-radius: 4px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>本地存储</title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	if(!window.localStorage){
+		console.log("浏览器不支持localstorage");
+		
+	}
+	else{
+//		var storage=window.localStorage;
+var storage=window.localStorage;
+   storage['a']=1;
+   storage.b=2;
+   storage.setItem("c",3);
+      console.log(storage["a"]);
+            console.log(typeof storage["b"]);
+            console.log(typeof storage["c"]);
+	}
+	var arr=[{username:"pan",passcode:123},{username:"chen",passcode:456}]
+	localStorage.setItem("user",JSON.stringify(arr))
+	console.log(JSON.parse(localStorage.getItem("user")))
+</script>
