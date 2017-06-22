@@ -1,5 +1,6 @@
 window.onload = function() {
 	$(function() {
+		  FastClick.attach(document.body);
 		var n = 0;
 		$(".xzhuan").on("tap",function() {
 			n++;
