@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	    <title>携程主页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="css/start.css"/>
+		<link rel="stylesheet" type="text/css" href="css/homepage.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css"/>
+		<script type="text/javascript">
+			document.getElementsByTagName("html")[0].style.fontSize=innerWidth/16+"px";
+		</script>
+		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.min.js"></script>
+	</head>
+	<body>
+		<div id="onebox" >
+		<div id="search-box">
+			<div id="search">
+				<span>搜索:目的地/酒店/景点/航班号</span>
+			</div>
+			<a href=""><span>我的</span></a>
+		</div>
+			<header>
+				<!--轮播位-->
+				<div id="swiper">
+				<div class="swiper-container" id="lbbox">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/b1.jpg"/></div>
+        <div class="swiper-slide"><img src="img/b2.png"/></div>
+        <div class="swiper-slide"><img src="img/b3.jpg"/></div>
+        <div class="swiper-slide"><img src="img/b4.jpg"/></div>
+        <div class="swiper-slide"><img src="img/b5.jpg"/></div>
+        <div class="swiper-slide"><img src="img/b6.jpg"/></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+</div>
+</div>
+			</header>
+			<!--导航-->
+			<nav class="nav-lists">
+				<!--第一个-->
+				<div class="nav-one">
+					<div class="nav-oneleft">
+						<a href="" class="hotel">
+							<em>酒 店</em>
+							<i class="bg_hotel"></i>
+						</a>
+					</div>
+					<div class="nav-twoleft">
+						<a href=""><em>海外酒店</em></a>
+						<a href=""><em>特价酒店</em></a>
+					</div>
+					<div class="nav-threeleft">
+						<a href=""><em>团 购</em></a>
+						<a href=""><em>民宿<span>.</span>客栈</em></a>
+					</div>
+				</div>
+				<!--第二个-->
+				<div class="nav-two">
+					<div class="nav-oneleft">
+						<a href="" class="hotel">
+							<em>机 票</em>
+							<i class="bg_hotel"></i>
+						</a>
+					</div>
+					<div class="nav-twoleft">
+						<a href=""><em>火车票.抢票</em></a>
+						<a href=""><em>特价机票</em></a>
+					</div>
+					<div class="nav-threeleft">
+						<a href=""><em>汽车票.船票</em></a>
+						<a href=""><em>专车<span>.</span>租车</em></a>
+					</div>
+				</div>
+				<!--第三个-->
+				<div class="nav-three">
+					<div class="nav-oneleft">
+						<a href="" class="hotel">
+							<em>旅 游</em>
+							<i class="bg_hotel"></i>
+						</a>
+					</div>
+					<div class="nav-twoleft">
+						<a href=""><em>目的地攻略</em></a>
+						<a href=""><em>周边游</em></a>
+					</div>
+					<div class="nav-threeleft">
+						<a href=""><em>邮轮</em></a>
+						<a href=""><em>定制旅行</em></a>
+					</div>
+				</div>
+				<!--第四个-->
+				<div class="nav-foer">
+					<div class="nav-oneleft">
+						<a href=""><em>景点.玩乐</em></a>
+						<a href=""><em>礼品卡</em></a>
+					</div>
+					<div class="nav-twoleft">
+						<a href=""><em>美食林</em></a>
+						<a href=""><em>WiFi.电话卡</em></a>
+					</div>
+					<div class="nav-threeleft">
+						<a href=""><em>全球购.换汇</em></a>
+						<a href=""><em>保险.签证</em></a>
+					</div>
+				</div>
+			</nav>
+			<!--九宫格列表-->
+			<div id="memu_list">
+				<!--第一个-->
+				<div class="list_rowone">
+					<a href="">
+						<span><i class="bg_one"></i></span>
+						<span>自由行</span>
+					</a>
+						<a href="">
+						<span><i class="bg_two"></i></span>
+						<span>微领队</span>
+					</a>
+						<a href="">
+						<span><i class="bg_three"></i></span>
+						<span>一日游</span>
+					</a>
+						<a href="">
+						<span><i class="bg_four"></i></span>
+						<span>自由行</span>
+					</a>
+				</div>
+				<!--第二个-->
+				<div class="list_rowtwo">
+					<a href="">
+						<span><i class="bg_five"></i></span>
+						<span>酒店+景点</span>
+					</a>
+						<a href="">
+						<span><i class="bg_six"></i></span>
+						<span>亲子.游学</span>
+					</a>
+						<a href="">
+						<span><i class="bg_seven"></i></span>
+						<span>外币兑换</span>
+					</a>
+						<a href="">
+						<span><i class="bg_eight"></i></span>
+						<span>加盟合作</span>
+					</a>
+				</div>
+				<!--第三个-->
+				<div class="list_rowthree">
+					<a href="">
+						<span><i class="bg_one"></i></span>
+						<span>机场停车</span>
+					</a>
+						<a href="">
+						<span><i class="bg_two"></i></span>
+						<span>行李寄送</span>
+					</a>
+						<a href="">
+						<span><i class="bg_three"></i></span>
+						<span>当季去哪</span>
+					</a>
+						<a href="">
+						<span><i class="bg_four"></i></span>
+						<span>更多服务</span>
+					</a>
+				</div>
+			</div>
+			<!--热门活动-->
+			<div id="hotbox">
+				<div class="hot">
+					<h2><i class="gg"></i>
+						<a href="#" class="mone">获取更多福利<span class="jt"></span></a>
+					</h2>
+				</div>
+					<div class="hot_one">
+						<div class="one_left">
+							<a href=""><img src="img/h1.jpg" alt="" /></a>
+						</div>
+						<div class="one_right">
+							<a href=""><img src="img/h2.jpg" alt="" /></a>
+							<a href=""><img src="img/h3.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="hot_two">
+						<a href=""><img src="img/h4.jpg" alt="" /></a>
+						<a href=""><img src="img/h5.jpg" alt="" /></a>
+					</div>
+			</div>
+			<footer>
+			<div class="f_one">
+				<a href="">
+					<span class="fb_one"></span>
+					<span>电话预定</span>
+				</a>
+				
+				<a href="">
+					<span class="fb_two"></span>
+					<span>下载客户端</span>
+				</a>
+				
+				<a href="">
+					<span class="fb_three"></span>
+					<span>我的</span>
+				</a>
+			</div>	
+			<div class="footpage_one">
+				<a href="">网站地图</a>｜
+				<a href=""><span class="qiu"></span>Global sites <span class="jtou"></span></a>｜
+				<a href="">电脑版</a>
+			</div>
+			<p class="footpage_two">©2017携程旅行｜沪ICP备08023580号</p>
+			</footer>
+		</div>
+		<!--第二个盒子-->
+		<div id="twobox" style="display: none;">
+			<div class="he_top">
+				<form class="forms">
+					<div class="inp">
+						<input type="text" id="txt"/>
+						<span class="cha"></span>
+					</div>
+					<button class="but">搜索</button>
+				</form>
+				<span class="top_left"></span>
+				<span class="top_right"></span>
+			</div>
+			<div class="sections">
+				<div class="logo">
+					<i class="logos"></i>
+					<span class="spone">下载携程app 专享优惠低至</span>
+					<span class="sptwo">50%</span>
+				</div>
+				<h4>热门搜索</h4>
+				<ul id="app">
+					<todo-item v-for="item of items" v-bind:todo="item"></todo-item>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

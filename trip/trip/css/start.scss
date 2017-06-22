@@ -1,0 +1,48 @@
+@charset "UTF-8";
+$sc:20;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+  
+  text-size-adjust: 100%;
+  font-size:14/$sc+rem;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #666;
+}
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+a,
+body,
+div,
+img,
+li,
+ul {
+  -webkit-touch-callout: none;
+}
+
+button,
+input {
+  outline: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
