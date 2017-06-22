@@ -270,6 +270,19 @@ body {
   width: 100%;
   overflow: auto;
 }
+#twobox .fly .lists .lit {
+  border: none;
+  width: 100%;
+  z-index: 999;
+}
+#twobox .fly .lists .lit img {
+  width: 100%;
+}
+#twobox .fly .lists .lit .ps {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
 #twobox .fly .lists li {
   padding: 10px 5px;
 }
@@ -399,6 +412,14 @@ body {
   color: #ccc;
   text-align: center;
   font-size: 12px;
+}
+#twobox .loding {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -22px;
 }
 
 /*# sourceMappingURL=soso.css.map */

@@ -286,8 +286,22 @@ body{
         width: 100%;
       
         overflow: auto;
+        .lit{
+                border: none;
+                width: 100%;
+                z-index: 999;
+                img{
+                    width: 100%;
+                }
+                .ps{
+                    width: 100%;
+                 text-align:center;
+                       font-size: 20px;  
+                }
+            }
         li{ 
             padding: 10px 5px;
+            
             .t_box{
                width: 100%;
                display: flex;
@@ -431,5 +445,13 @@ body{
                 }
             }
     }
+    }
+    .loding{
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -22px;
     }
 }
