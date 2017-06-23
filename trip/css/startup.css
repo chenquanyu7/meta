@@ -1,0 +1,38 @@
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#app #lists {
+  width: 400%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s;
+}
+#app #lists li {
+  float: left;
+  width: 25%;
+  height: 100%;
+  position: relative;
+}
+#app #lists li img {
+  width: 100%;
+  height: 100%;
+}
+#app #lists li .loding {
+  position: absolute;
+  width: 140px;
+  height: 30px;
+  left: 50%;
+  bottom: 10px;
+  margin-left: -70px;
+  color: #FC9720;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=startup.css.map */

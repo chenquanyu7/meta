@@ -68,6 +68,8 @@ window.onload = function() {
 	   	})
 
         $(".lists").html(str);
+        $(".spone").html(inp);
+        $(".sptwo").html(ipo);
 $(".loding").css("display","none");
      
 	   })
@@ -99,6 +101,8 @@ $(".loding").css("display","none");
 
         $(".lists").html(str);
 $(".loding").css("display","none");
+ $(".spone").html(inp);
+        $(".sptwo").html(ipo);
 	   })
 		}
 		 

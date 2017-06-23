@@ -12,9 +12,9 @@
 		</script>
 		<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/swiper.jquery.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/vue.min.js"></script>
+		<script src="js/homepage.js" type="text/javascript" charset="utf-8"></script>
+		
 	</head>
 	<body>
 		<div id="onebox" >
@@ -220,13 +220,13 @@
 		<!--第二个盒子-->
 		<div id="twobox" style="display: none;">
 			<div class="he_top">
-				<form class="forms">
+				<div class="forms">
 					<div class="inp">
 						<input type="text" id="txt"/>
 						<span class="cha"></span>
 					</div>
 					<button class="but">搜索</button>
-				</form>
+				</div>
 				<span class="top_left"></span>
 				<span class="top_right"></span>
 			</div>
@@ -238,7 +238,7 @@
 				</div>
 				<h4>热门搜索</h4>
 				<ul id="app">
-					<todo-item v-for="item of items" v-bind:todo="item"></todo-item>
+					<li v-for='item of items'>{{item}}<i class='right_jt'></i></li>
 				</ul>
 			</div>
 		</div>
