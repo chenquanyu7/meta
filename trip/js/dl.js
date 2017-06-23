@@ -1,5 +1,5 @@
 
-	window.onload = function() {
+
 		$(function() {
 			var sjshu = document.getElementById("sjishu");
 			var oc = sjshu.getContext("2d");
@@ -142,6 +142,10 @@
                   }
 				}
 			})
+			$(".back").click(function(){
+				location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
+				alert("aaa");
+			})
 
 		})
-	}
+	

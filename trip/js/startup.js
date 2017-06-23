@@ -39,6 +39,6 @@
  	$("#lists").css("-webkit-transform","translate3d("+(-n*w)+"px,0,0)");
  })
  $(".loding").on("tap",function(){
- 	location.href="dengl.html";
+ 	location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
  })
  })
