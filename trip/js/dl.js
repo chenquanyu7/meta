@@ -144,7 +144,7 @@
 			})
 			$(".back").click(function(){
 				location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
-				alert("aaa");
+			
 			})
 
 		})
