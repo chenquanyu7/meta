@@ -150,7 +150,7 @@
 				  if(i.userName==$("#txt").val() &&  i.passCode==$("#pass").val()  && s.toLowerCase()==yzma.value.toLowerCase()) {
 						alert("登录成功");
 							setTimeout(function(){
-								alert("lll");
+								
 	     			location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
 
 	     				},2000);
