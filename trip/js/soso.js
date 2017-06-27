@@ -1,4 +1,4 @@
-window.onload = function() {
+
 	$(function() {
 //		  FastClick.attach(document.body);
 		var n = 0;
@@ -111,7 +111,7 @@ $(".loding").css("display","none");
 	
 	else{
 			var str="";
-			alert($(".lists li").length);
+			
 			setTimeout(function(){
 				str+="<li class='lit'><img src='img/1.png'/><p class='ps'>抱歉，没有相关信息!</p></li>";
 			 $(".lists").html(str);
@@ -120,6 +120,10 @@ $(".loding").css("display","none");
        }
 	
 	})
+				$(".back").click(function(){
+					
+					location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
+				})
 	})
 
-}
+

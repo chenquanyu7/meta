@@ -145,21 +145,36 @@
 			$("#smt").click(function() {
 				arr4 = JSON.parse(localStorage.getItem("user"));
 				console.log(arr4);
-				for(let i of arr4) {
+				for(var i in arr4) {
 					console.log(i)
-				  if(i.userName==$("#txt").val() &&  i.passCode==$("#pass").val()  && s.toLowerCase()==yzma.value.toLowerCase()) {
-						alert("登录成功");
+				  if(arr4[i].userName==$("#txt").val() &&  arr4[i].passCode==$("#pass").val()  && s.toLowerCase()==yzma.value.toLowerCase()) {
+						$(".dwei").css("display","block");
 							setTimeout(function(){
-								
+					   $(".dwei").css("display","none");
 	     			location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
 
 	     				},2000);
 						break;
-						
-					} 
 				
+					} 
+				if(i==(arr4.length-1)&&$(".dwei").css("display","none")){
+					
+					$(".dwei2").css("display","block");
+					setTimeout(function(){
+					   $(".dwei2").css("display","none");
+	     			
+
+	     				},2000);
 				}
+				}
+				
+				console.log(i)
+			
+				$("#txt").val("");
+				$("#pass").val("");
+				yzma.value="";
 			})
+				
 			$(".back").click(function(){
 				location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
 			
