@@ -120,7 +120,7 @@ $(".loding").css("display","none");
        }
 	
 	})
-				$(".back").click(function(){
+				$(".back").on("tap",function(){
 					
 					location.href="https://chenquanyu7.github.io/meta/trip/homepage.html";
 				})
