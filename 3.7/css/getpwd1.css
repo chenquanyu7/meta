@@ -1,0 +1,96 @@
+/*=============pic==================*/
+a:link,a:visited{color:#000;
+                 text-decoration:none;
+				  sfont-size:12px;}
+.clear{clear:both;
+      font-size:0;
+	  line-height:0;}
+/*==============Í·²¿==============*/
+.head{width:964px;
+      padding:18px 0 0 39px;
+	  height:60px;
+	  margin:0 auto;}
+.header{padding-left:34px;
+       width:969px;}
+.box{width:1003px;
+     height:785px;
+	 background:url(../images/bg.gif);
+	 margin:0 auto;}
+.box .bar{height:45px;
+         background:url(../images/bar.jpg) no-repeat;
+		  display:block;
+		  padding:0;
+		  margin:0;}
+.box .content{height:726px;
+             margin:0 auto;
+			  width:877px;
+			  background:#fff;
+			  border-left:1px solid #CBCBCB;
+			  border-right:1px solid #CBCBCB;
+			  padding:14px 0 0 34px;
+			  font-size:14px;
+			  color:#8C8C8C;}
+.box .content input,.box .content select{color:#8C8C8C;
+                                      font-size:14px;}
+.box .content .reg_nav{padding-left:3px;
+                     height:42px;}
+.box .content .title_pic{height:33px; 
+                       padding-top:8px;}
+.content span{font-weight:bold;}
+.phone{width:200px;
+      height:17px;
+	   border:1px solid #C1C1C1;
+	   padding:4px 0 0 5px;}
+.box .content .butbox{padding:24px 0 0 490px;
+                     height:36px;
+					  margin-top:40px;
+					  background:url(../images/dots.gif) repeat-x left top;
+					  width:348px;}
+.box .content .butbox input{border:none;
+                          width:136px;
+						    height:35px;
+							display:block;
+							float:left;
+							margin-right:24px;}
+.box .content .butbox .skip{background:url(../images/skip.jpg) no-repeat;}
+.box .content .butbox .next{background:url(../images/next.jpg) no-repeat;}
+.foot{width:966px;
+     height:25px;
+	 padding:14px 0 0 37px;
+	 border-top:1px solid #AAA6A5;
+	 margin:0 auto;
+	 color:#999;
+	 border-bottom:4px solid #F25E8E;
+	 font-size:12px;}
+.foot p{float:left;
+       width:545px;
+	   display:block;}
+.foot ul{float:left;
+        display:block;
+		 width:354px;}
+.foot li{float:left;
+        margin-right:9px;
+		 display:inline;}
+.foot a:link,.foot a:visited{color:#999;
+                            text-decoration:none;}
+							
+							
+.content .infoTab{display:none;}
+
+.content .curTab{display:block;}
+
+.return{background:url(../images/return.jpg) no-repeat;}
+.next{background:url(../images/next.jpg) no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+							
+							

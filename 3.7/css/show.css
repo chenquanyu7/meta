@@ -1,0 +1,173 @@
+/*=============pic==================*/
+a:link,a:visited{color:#000;
+                 text-decoration:none;
+				  font-size:12px;}
+.clear{clear:both;
+      font-size:0;
+	   line-height:0;}
+/*==============Í·²¿==============*/
+.head{width:964px;
+      padding:18px 0 0 39px;
+	  height:60px;
+	  margin:0 auto;}
+.main{width:923px;
+      height:420px;
+	  margin:0 auto;
+	  background:url(../images/bg.jpg) no-repeat center;
+	  padding:62px 45px 0 35px;}
+.main .main_left{width:555px;
+                float:left;
+				 margin-right:44px;
+				 height:360px;}
+.main .main_left .slider_box{width:555px;
+                           height:330px;
+						     overflow:hidden;
+							 position:relative;}
+.slider_box .slider{position:absolute;}
+.slider_box .slider .num{height:30px;}
+.slider_box .slider div{width:555px;
+                      float:left;
+						height:330px;
+						position:relative;}
+.slider_box .slider div .pic1{position:relative;}
+.slider_box .slider div .pic1 a{display:block;
+                              width:124px;
+							    bottom:0px;
+								*bottom:4px;
+								height:35px;
+								position:absolute;
+								background:#fff;
+								filter:alpha(opacity=0);
+								opacity:0;}
+.slider_box .slider div ol{width:555px;
+                         height:330px;
+						   position:absolute;
+						   top:0;
+						   left:0;}
+.slider_box .slider div ol li{width:111px;
+                            height:165px;
+							  background:rgba(0,0,0,0.4);
+							  float:left;}
+.slider_box .slider div ol li:hover{background:rgba(0,0,0,0);}
+.slider_box .slider div ul{width:555px;
+                         height:330px;}
+.slider_box .slider div ul li{float:left;
+                            width:111px;
+							  height:165px;}
+.slider_box .slider div ul li img{width:111px;
+                               height:165px;
+							     display:block;}
+.slider_box .slider div .pic1 .iphone{left:293px;}
+.slider_box .slider div .pic1 .android{left:427px;}
+.slider_box .slider div .text{padding:10px 0 0 285px;
+                            font-size:14px;
+							  color:#8A8A8A;}
+.slider_box .slider div .text a:link,.text a:visited{color:#8a8a8a;
+                                                  text-decoration:none;}
+.slider_box .slider div .text a,.text span{display:block;
+                                        float:left;
+										   padding-right:2px;}
+.slider_box .slider div .text a{padding:1px 22px 0 21px;}
+.slider_box .slider div .sina{background:url(../images/sina.png) no-repeat;}
+.slider_box .slider div .qq{background:url(../images/qq.png) no-repeat;}
+.main .main_left .num{padding-left:245px;}
+.main .main_left .num li{float:left;
+                       width:11px;
+					     height:11px;
+						 display:inline;
+						 margin-right:10px;
+						 background:url(../images/dot.png) no-repeat;cursor:pointer;}
+.main .main_left .num .on{background:url(../images/curdot.png) no-repeat;}
+.main_right{width:268px;
+           float:left;
+		    height:310px;
+			background:url(../images/login.png) no-repeat;
+			padding:61px 25px 0 25px;
+			color:#010101;}
+.main_right .writebox{width:200px;
+                    height:25px;
+					  margin:11px 8px 0px 10px;
+					  border:1px solid #DBDBDB;
+					  color:#CACACA;}
+.main_right .btn{color:#E92879;
+                margin:5px 7px 0 47px;
+				 height:47px;
+				 *height:40px;}
+.main_right .btn input{display:block;
+                     float:left;
+					   width:71px;
+					   height:33px;
+					   border:none;
+					   background:#0f0 url(../images/login.jpg) no-repeat;}
+.main_right .checks input{display:block;
+                        float:left;
+						  vertical-align:middle;
+						  padding-top:5px;}
+.main_right .checks{padding-left:60px;}
+.main_right .checks span{float:left;
+                       display:block;
+					     padding:6px 0px 0 6px;
+						 width:181px;
+						 text-align:left;
+						 *padding-top:5px;
+						 font-size:12px}
+.main_right .btn p{float:left;
+                  padding:10px 0 0 20px;
+				   width:120px;}
+.main_right .btn a:link,.btn a:visited{text-decoration:none;
+                                      color:#EC2978;}
+.main_right .other{font-size:12px;
+                  text-align:center;
+				   padding-top:34px;
+				   height:44px;*height:38px;
+				   color:#818181;
+				   clear:both;}
+.main_right .icon{width:205px;
+                 height:35px;
+				  margin:0 auto;
+				  font-size:14px;}
+.main_right .icon a{display:block;
+                   float:left;
+				    width:58px;
+					padding:11px 0 0 37px;
+					height:16px;}
+.main_right .icon a:link,.icon a:visited{color:#808080;
+                                       text-decoration:none;}
+.main_right .icon1{margin-right:15px;
+                  background:#fff url(../images/sina.jpg) no-repeat;}
+.main_right .icon1:hover{background-position:left bottom;}
+.main_right .icon .icon2{background:url(../images/qq.jpg) no-repeat;
+                       padding-left:34px;}
+.main_right .icon .icon2:hover{background-position:left -27px;}
+.footer{width:964px;
+       height:25px;
+	    padding:14px 0 0 37px;
+		border:1px solid #AAA6A5;
+		margin:0 auto;
+		color:#999;}
+.foot{width:966px;
+      height:25px;
+	  padding:14px 0 0 37px;
+	  border-top:1px solid #AAA6A5;
+	  margin:0 auto;
+	  color:#999;
+	  border-bottom:4px solid #F25E8E;}
+.footer p,.foot p{float:left;
+                 width:585px;}
+.footer ul,.foot ul{float:left;}
+.footer li,.foot li{float:left;
+                   margin-right:10px;
+				    display:inline;}
+.footer a:link,.footer a:visited,.foot a:link,.foot a:visited{color:#999;
+                                                            text-decoration:none;}
+#message{width:180px;
+         height:120px;
+		  background:#FFF;
+		  position:absolute;
+         right:150px;
+		  top:140px;
+		  line-height:25px;
+		  padding:10px;
+		  border-radius:10px;
+		  border:2px solid #F53596;
+		  display:none;}
