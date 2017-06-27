@@ -8,6 +8,7 @@
   width: 400%;
   height: 100%;
   position: absolute;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 #app #lists li {
@@ -34,5 +35,3 @@
   font-size: 16px;
   border-radius: 5px;
 }
-
-/*# sourceMappingURL=startup.css.map */

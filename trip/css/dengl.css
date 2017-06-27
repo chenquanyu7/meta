@@ -35,7 +35,8 @@ header{
     left: 10px;
     top: 50%;
     margin-top: -6px;
-	 transform: rotate(45deg);
+	 -webkit-transform: rotate(45deg);
+	         transform: rotate(45deg);
 }
 #nav{
 	text-align: center;
@@ -68,7 +69,7 @@ header{
 	text-align: center;
 	
 }
-form{
+.fox{
 	width: 100%;
 }
 #txt,#pass{
@@ -114,8 +115,12 @@ form{
 }
 .position{
 	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content:space-between ;
+	-webkit-box-pack:justify;
+	    -ms-flex-pack:justify;
+	        justify-content:space-between ;
 	padding: 5px 15px;
 	margin-top: 15px;
 }
@@ -127,12 +132,20 @@ form{
 	width:100%;
 	padding:20px 15px;
 	margin-top:60px;
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex ;
 }
 .logo>a{
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .logo>a>i{
 	display: block;
